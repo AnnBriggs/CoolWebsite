@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        h1 {
+            font-size:5em;
+        }
+        p {
+            font-size:10em;
+        }
+    </style>
+    <script>
+        setInterval(function(){
+            let money=+document.getElementById("counter").innerHTML;
+            document.getElementById("counter").innerHTML=(money+(money)*Math.random()).toFixed(2);
+        }, 500);
+    </script>
+</head>
+<body>
+<h1>
+    tyler's net worth:
+</h1>
+<p>
+    $<span id="counter">10</span>
+</p>
+</body>
+</html>

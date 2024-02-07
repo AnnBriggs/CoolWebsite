@@ -1,8 +1,47 @@
 <!doctype html>
 <html>
+<head>
+    <script>
+        let hue=0;
+        setInterval(function(){
+            hue=(hue+1)%360;
+            document.getElementById("rainbow").style.color="hsl("+hue+", 100%, 50%)"
+        }, 1);
+    </script>
+<style>
+    img {
+        height:30vw;
+    }
+    h1 {
+        font-size:20em;
+    }
+    h2 {
+        font-size:15em;
+    }
+    a {
+        font-size:5em;
+    }
+</style>
+</head>
 <body>
 <h1>
     Tyler Hester: real or fake?
 </h1>
+<p>
+    See the boy himself:
+</p>
+<div>
+<img src="artisttyler.png" />
+<img src="charlietyler.jpg" />
+<img src="musiciantyler.jpg" />
+</div>
+<a href="counter.html">
+    <br>
+    <br>
+    check the facts of his stacks, jack
+</a>
+<h2 id="rainbow">
+    HIRE THIS MAN IMMEDIATELY
+</h2>
 </body>
 </html>
